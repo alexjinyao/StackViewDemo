@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Photo Collection-->
         <scene sceneID="R8D-YJ-BWL">
             <objects>
                 <viewController id="U2P-NL-8an" customClass="ViewController" customModule="StackView" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,25 +23,76 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature-1" translatesAutoresizingMaskIntoConstraints="NO" id="CmV-Py-OlG">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="133.5"/>
+                                        <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="86.5"/>
+                                        </variation>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature-2" translatesAutoresizingMaskIntoConstraints="NO" id="IYa-C3-xtB">
                                         <rect key="frame" x="0.0" y="143.5" width="560" height="133"/>
+                                        <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="96.5" width="360" height="87"/>
+                                        </variation>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature-3" translatesAutoresizingMaskIntoConstraints="NO" id="jgP-Ac-g6o">
                                         <rect key="frame" x="0.0" y="286.5" width="560" height="133.5"/>
+                                        <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="193.5" width="360" height="86.5"/>
+                                        </variation>
                                     </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NTG-Lx-WHu">
+                                <rect key="frame" x="20" y="502" width="560" height="58.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="firstBaseline" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kjK-CS-HyM">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="38"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg2-PE-Dde">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ep9-1n-jkX">
+                                                <rect key="frame" x="109.5" y="8" width="75" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erv-Ej-mAL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="Like"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-FY-KuV">
+                                                        <rect key="frame" x="35" y="0.0" width="40" height="30"/>
+                                                        <state key="normal" title="Share"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A collection of nature photos from magdeleine.co" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41J-6e-XKD">
+                                        <rect key="frame" x="0.0" y="38" width="376.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="38" width="265" height="41"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wA7-s4-nJt" firstAttribute="height" secondItem="qaP-vq-DMb" secondAttribute="height" multiplier="0.7" id="Fia-H0-Qk6"/>
+                            <constraint firstItem="NTG-Lx-WHu" firstAttribute="top" secondItem="wA7-s4-nJt" secondAttribute="bottom" constant="8" id="LIk-w7-tjc"/>
                             <constraint firstItem="wA7-s4-nJt" firstAttribute="leading" secondItem="qaP-vq-DMb" secondAttribute="leadingMargin" id="Z32-81-KPt"/>
+                            <constraint firstItem="NTG-Lx-WHu" firstAttribute="leading" secondItem="qaP-vq-DMb" secondAttribute="leadingMargin" id="mUj-1K-0kq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NTG-Lx-WHu" secondAttribute="trailing" id="vi3-fx-AHg"/>
                             <constraint firstItem="wA7-s4-nJt" firstAttribute="top" secondItem="cNK-ZK-bev" secondAttribute="bottom" constant="10" id="xAJ-YX-6e6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wA7-s4-nJt" secondAttribute="trailing" id="xLH-ey-qjO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rgm-1f-kOb"/>
+                    <navigationItem key="navigationItem" title="Photo Collection" id="rgm-1f-kOb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJa-HG-Tn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
