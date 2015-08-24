@@ -4,7 +4,7 @@
 
 ###A Sample of using UIStackView in iOS9
 
-![gifDemo](/Users/jin/Desktop/StackViewDemo.gif)
+![gifDemo](https://github.com/alexjinyao/StackViewDemo/raw/master/StackViewDemo.gif)
 
 Refer tutorial:
 
